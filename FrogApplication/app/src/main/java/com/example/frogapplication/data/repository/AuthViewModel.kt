@@ -6,6 +6,11 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.withContext
 import repository.UserRepository
 
+/**
+ *
+intermediate layer
+ */
+
 class AuthViewModel(
   private val repository: UserRepository,
 ) :  ViewModel() {
