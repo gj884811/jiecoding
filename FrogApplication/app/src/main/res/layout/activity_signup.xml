@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.frogapplication.data.repository.AuthViewModel"/>
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.frogapplication.ui.SignupActivity">
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="welcome "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" app:fontFamily="cursive"
+                android:textColor="#465A61"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="Create a account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="casual" android:textStyle="bold" android:textAllCaps="false"
+                android:typeface="monospace" android:textColor="#969EEE"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:padding="18dp"
+            android:background="#ffffff"
+            android:layout_below="@id/linearLayout1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:hint="jie gao"
+                android:inputType="text"
+                android:drawablePadding="16dp"
+                android:drawableLeft="@drawable/ic_name"
+                android:background="@drawable/edit_text_round_gray_background"
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:hint="jie18321272482@163.com"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="16dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:background="@drawable/edit_text_round_gray_background"
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:inputType="textPassword"
+                android:hint="password"
+                android:drawablePadding="16dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:background="@drawable/edit_text_round_gray_background"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/edit_text_password_confirm"
+                android:inputType="textPassword"
+                android:hint="confirm password"
+                android:drawablePadding="16dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:background="@drawable/edit_text_round_gray_background"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/button_sign_up"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:text="Sign Up"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_login"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/purple_200"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_below="@id/linearLayout2"
+            android:textAlignment="center"
+            android:text="Already have an account?\nSign in Here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
